@@ -1,6 +1,7 @@
 package task6;
 
 
+import java.util.ArrayList;
 import java.util.EmptyStackException;
 
 /**
@@ -41,5 +42,20 @@ public class Task6 {
         System.out.println(address.username());
         System.out.println(address.host());
         System.out.println(address.topDomain());
+
+        HumanTemperature human;
+        try {
+            human = HumanTemperature.of(16);
+        }
+        // ?? powinno być runtime czy illegalargument czy illegaltemperature ??
+        catch (RuntimeException e) {
+            System.out.println("Podano niepoprawną temperaturę");
+            return;
+        }
+        System.out.println(human.getTemperature());
+        System.out.println(human.format());
+        System.out.println(human.isNormal());
+        System.out.println(human.getFahrenheit());
+        System.out.println(human.getKelvin());
     }
 }
