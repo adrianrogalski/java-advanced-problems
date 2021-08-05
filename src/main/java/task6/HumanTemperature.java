@@ -34,10 +34,7 @@ public class HumanTemperature {
     }
 
     public boolean isNormal() {
-        if (temperature < 36 || temperature > 37) {
-            return false;
-        }
-        return true;
+        return !(temperature < 36) && !(temperature > 37);
     }
 
     public String format() {

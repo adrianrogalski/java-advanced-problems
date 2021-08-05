@@ -19,17 +19,11 @@ public class EmailAddress {
     }
 
     private static boolean hasOneAt(String email) {
-        if (email.indexOf("@") != email.lastIndexOf("@")) {
-            return false;
-        }
-        return true;
+        return email.indexOf("@") == email.lastIndexOf("@");
     }
 
     private static boolean hasDotAfterAt(String email) {
-        if (email.substring(email.indexOf("@")).indexOf(".") == -1) {
-            return false;
-        }
-        return true;
+        return email.substring(email.indexOf("@")).indexOf(".") != -1;
     }
 
     private static boolean isAlphanum(String email) {
