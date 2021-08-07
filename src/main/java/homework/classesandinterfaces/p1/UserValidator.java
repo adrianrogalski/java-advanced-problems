@@ -1,4 +1,4 @@
-package homework.classesandinterfaces;
+package homework.classesandinterfaces.p1;
 
 import java.util.Locale;
 import java.util.regex.Matcher;
@@ -8,7 +8,7 @@ public class UserValidator {
 
      public String validateEmails(String inputEmail){
         class Email {
-            String address;
+            private String address;
             private Email(String address) {
                 this.address = address;
             }

@@ -1,7 +1,4 @@
-package homework.classesandinterfaces;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+package homework.classesandinterfaces.p1;
 
 public class ValidatorApp {
     public static void main(String[] args) {
